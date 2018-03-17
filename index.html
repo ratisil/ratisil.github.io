@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello 2</title>
+    <style>
+    button {
+        background-color: darkred;
+    }
+    .text4 {
+        color: hotpink;
+        font-size: 30px;
+    }
+    .img {
+        width: 50%;
+        height: 50%;
+        background-image: url("./img/455373960_1280x720.jpg");
+    }
+    </style>
+
+<!--JavaScript -->
+<script>
+    function onAlert () {
+        alert('ALERT ดังๆ');
+    }
+    function onAlertmytext (text) {
+        var mergetext = text + document.getElementById('mytext').value;
+        alert('mergetext');
+    }
+</script>
+
+</head>
+<body>
+    <!-- Img Tag -->
+    <img class="img" src="./img/455373960_1280x720.jpg"></img>
+    <h1 class="img">Unikyo</h1>
+
+
+    <h1 style="color:blueviolet;font:800">test</h1>
+    <h2 class="text4">test2</h2>
+    <button style="background-color:rgb(238, 78, 15)"><h2>press me</h2></button>
+    <br>
+    <button onclick="onAlert()"><h2>press me2</h2></button><br>
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+
+Please enter text: <input type="text" id="mytext"></input>
+<button onclick="onAlertmytext('testest')">OK</button>
+
+</body>
+</html>
